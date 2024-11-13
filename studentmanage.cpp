@@ -131,7 +131,7 @@ class student
             void deleat()
             {
                 string del;
-                cout<<"Enter a roll no you want deleat data:";
+                cout<<"Enter a roll no you want delete data:";
                 cin>>del;
                 for(int i=1;i<=total;i++){
                     if(del==roll_no[i]){
