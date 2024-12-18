@@ -98,4 +98,107 @@
   
   Uses a loop for continued user interaction, providing functionality like login, search, and deletion.
 
+# 5. Typing Master Program
+
+This program helps users measure their typing speed and accuracy by comparing their input with a randomly generated sentence.
+
+Key Features
+
+1. Random Sentence Generator:
+
+The program selects a random sentence from a predefined array of sentences.
+
+Ensures variability for each execution.
+
+
+
+2. User Input:
+
+Prompts the user to type the displayed sentence.
+
+
+
+3. Typing Speed Calculation:
+
+Measures the time taken by the user to type the sentence using the time library.
+
+Calculates Words Per Minute (WPM) based on the number of words and time taken.
+
+
+
+4. Accuracy Check:
+
+Compares the user's input with the original sentence.
+
+If the input matches exactly, the WPM is displayed.
+
+If there is a mismatch, an error message is shown, prompting the user to type the sentence correctly.
+
+
+
+5. Word Count:
+
+Dynamically calculates the number of words in the user's input.
+
+
+
+
+Technologies Used
+
+C++: The entire program is written in C++.
+
+Libraries:
+
+<iostream>: For input and output operations.
+
+<ctime>: To generate random numbers and calculate time.
+
+<cstdio>: For additional utilities like NULL.
+
+
+
+How It Works
+
+1. Displays a random sentence for the user to type.
+
+
+2. Captures the start time when the sentence is displayed.
+
+
+3. Accepts user input and records the end time.
+
+
+4. Compares the input with the displayed sentence:
+
+If correct, it calculates WPM.
+
+If incorrect, it prompts an error message.
+
+
+
+5. Outputs the typing speed (WPM) and time taken.
+
+
+
+Code Highlights
+
+Random Sentence Selection:
+
+    srand(time(NULL));
+    int random = rand() % total;
+    string sentences = sentence[random];
+
+Typing Speed Formula:
+
+    double wpm = (words / timeused) * 60;
+
+
+Future Enhancements
+
+Add more sentences to improve variability.
+
+Implement partial match scoring for better accuracy checks.
+
+Enhance the UI with color-coded feedback (e.g., correct/incorrect inputs).
+
   
