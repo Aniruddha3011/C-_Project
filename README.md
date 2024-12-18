@@ -184,13 +184,13 @@ Code Highlights
 
 Random Sentence Selection:
 
-    srand(time(NULL));
-    int random = rand() % total;
-    string sentences = sentence[random];
+  srand(time(NULL));
+  int random = rand() % total;
+  string sentences = sentence[random];
 
 Typing Speed Formula:
 
-    double wpm = (words / timeused) * 60;
+  double wpm = (words / timeused) * 60;
 
 
 Future Enhancements
