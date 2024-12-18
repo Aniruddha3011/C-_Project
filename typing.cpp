@@ -18,7 +18,7 @@ int main(){
     "Practice makes perfect.",
     "Coding improves problem-solving skills",
     "I love new things",
-    "Bhagavat gita says word hard in silence let success be your noise"};
+    "Bhagavat gita says work hard in silence let success be your noise"};
 
     int total=sizeof(sentence)/sizeof(sentence[0]);
     int random=rand()%total;
